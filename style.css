@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=The+Nautigal:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=The+Nautigal:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500;1,6..96,600&display=swap");
+
+/* para el hero */
+@import url('https://fonts.cdnfonts.com/css/pure-blossom');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+    --colortitulos: #9e7757 ;
+    --colortextos:#777777;
+    --colorbotones:#706866 ;
+    --colorfondo: #A3B1F2;
+    --padding: 60px 0;
+    --marginelementos: 10px;
+    
+    --letratituloprincipal:'Pure Blossom', sans-serif;
+}
+
+body {
+  background-color: #faebd7f5;
+  font-family:monospace
+}
+
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--padding);
+}
+
+/* MENU */
+.menu{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    
+}
+.logo{
+    height: 70px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+   
+}
+
+.enlaces a:hover{
+    background-color: var(--colorbotones);
+    border-radius: 22px;
+}
+
+.enlaces a:active{
+    background-color:#cd3d44 ;
+    border-radius: 22px;
+}
+/* HERO */
+.hero{
+    height: 500px;
+    background-image: url(./assets/img/confiteria_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    color: #18120f ;
+    font-weight: 700;
+}
+
+.contenedor-textos h1{
+    font-family: var(--letratituloprincipal);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1px   #171514 ;
+    font-size: 55px;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: var(--colorbotones);
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.boton:focus{
+    background-color: #9e7757;
+    box-shadow: 0 0 90px rgba(173, 95, 6, 0.808);
+}
+
+
+/* WAVE */
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    
+}
+/* MAIN */
+.contenido{
+    border: #706866 1px solid;
+    
+    
+}
+
+.articulos-container{
+    padding-top: var(--marginelementos);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 1;
+}
+
+.articulos{
+    background-color: #524139;
+    display: inline-block;
+    width: 350px;
+    border-radius: 18px;
+    
+    margin: 20px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: var(--colortitulos);
+}
+
+.articulos li{
+    text-align: center;
+    list-style: none;
+    color: #777777;
+    margin:var(--marginelementos);
+    
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #d6ccbe  ;
+    color:  #845e4a ;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer i{
+    background-color: #18120f;
+    color:  #a16533 ;
+}
